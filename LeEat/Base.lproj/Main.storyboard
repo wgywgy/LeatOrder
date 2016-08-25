@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IKH-Eq-NWx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--乐饭团-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LeEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJf-yp-qbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="jHy-i7-kKb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUT-Rm-slX" customClass="AnimatedTextInput" customModule="AnimatedTextInput">
+                                <rect key="frame" x="0.0" y="64" width="320" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="U65-85-gF0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLl-6R-tdP" customClass="AnimatedTextInput" customModule="AnimatedTextInput">
+                                <rect key="frame" x="0.0" y="128" width="320" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="aB1-9n-w7g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZUT-Rm-slX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6i9-i2-FcF"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUT-Rm-slX" secondAttribute="trailing" id="9CK-yf-wRl"/>
+                            <constraint firstItem="sLl-6R-tdP" firstAttribute="top" secondItem="ZUT-Rm-slX" secondAttribute="bottom" id="Rl7-A4-gmY"/>
+                            <constraint firstAttribute="trailing" secondItem="sLl-6R-tdP" secondAttribute="trailing" id="n8Q-j4-XmB"/>
+                            <constraint firstItem="ZUT-Rm-slX" firstAttribute="top" secondItem="yJf-yp-qbA" secondAttribute="bottom" id="rSn-iL-GTO"/>
+                            <constraint firstItem="sLl-6R-tdP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xyI-l2-HvB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="乐饭团" id="znf-Vb-Cq7">
+                        <barButtonItem key="rightBarButtonItem" title="登录" id="tYM-U2-rTa">
+                            <connections>
+                                <action selector="touchLoginBtn:" destination="BYZ-38-t0r" id="72z-oE-Xck"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="passwdInput" destination="sLl-6R-tdP" id="wuR-hH-Alp"/>
+                        <outlet property="userIDInput" destination="ZUT-Rm-slX" id="W9q-WC-Dxy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="397"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7jY-c6-gzn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IKH-Eq-NWx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lNl-lh-ET2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hh1-qw-AfW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbz-Ju-sgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="397"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zX3-P3-Vmv">
+            <objects>
+                <viewController id="BIr-RT-jAn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jnf-n6-cs0"/>
+                        <viewControllerLayoutGuide type="bottom" id="3hc-mg-ucm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8vc-ay-BfL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwN-OG-yW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
