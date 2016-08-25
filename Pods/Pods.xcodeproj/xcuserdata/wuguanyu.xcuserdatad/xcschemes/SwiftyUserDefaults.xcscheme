@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '00F5FAE394794789749EDB54'
-               BlueprintName = 'AnimatedTextInput'
+               BlueprintIdentifier = 'A42920BDCEE0BDBADAC35A0C'
+               BlueprintName = 'SwiftyUserDefaults'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AnimatedTextInput.framework'>
+               BuildableName = 'SwiftyUserDefaults.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -29,6 +29,10 @@ class ALoginViewController: BaseViewController {
     }
     
     func touchLoginBtn(sender: AnyObject) {
+        let aVc = OrderDetailViewController()
+        self.navigationController?.pushViewController(aVc, animated: true)
+        return
+            
         print("userId: \(userIDInput.text)")
         print("userwd: \(passwdInput.text)")
         guard let txt = userIDInput.text, userId = Int(txt) else {
@@ -59,8 +63,6 @@ class ALoginViewController: BaseViewController {
                 
                 if user?.success == true {
                     // Save UserInfo
-                    
-                    
                     let aVc = OrderDetailViewController()
                     self.navigationController?.pushViewController(aVc, animated: true)
                 } else {

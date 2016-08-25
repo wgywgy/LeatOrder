@@ -91,6 +91,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-LeEat/ObjectMapper.framework"
   install_framework "Pods-LeEat/Result.framework"
   install_framework "Pods-LeEat/SnapKit.framework"
+  install_framework "Pods-LeEat/SwiftyUserDefaults.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-LeEat/Alamofire.framework"
@@ -100,4 +101,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-LeEat/ObjectMapper.framework"
   install_framework "Pods-LeEat/Result.framework"
   install_framework "Pods-LeEat/SnapKit.framework"
+  install_framework "Pods-LeEat/SwiftyUserDefaults.framework"
 fi

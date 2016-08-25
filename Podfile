@@ -8,6 +8,7 @@ pod 'Moya'
 pod 'ObjectMapper'
 pod 'AnimatedTextInput'
 pod 'JDropDownAlert'
+pod 'SwiftyUserDefaults'
 end
 
 target 'LeEatTests' do

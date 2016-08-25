@@ -31,6 +31,8 @@ public enum LeEat {
     case Login(Int, String)
     case CanBook
     case Book
+    case Delete
+    case GroupList
 }
 
 extension LeEat: TargetType {
@@ -43,12 +45,16 @@ extension LeEat: TargetType {
             return "/lebookdinner/canbok"
         case .Book:
             return "/lebookdinner/book"
+        case .Delete:
+            return "/lebookdinner/delete"
+        case .GroupList:
+            return "/lebookdinner/groupList"
         }
     }
     
     public var method: Moya.Method {
         switch self {
-        case Login, CanBook, Book:
+        case Login, CanBook, Book, .Delete, GroupList:
             return .GET
         }
     }
@@ -61,6 +67,10 @@ extension LeEat: TargetType {
             return ["":""]
         case Book:
             return ["":""]
+        case Delete:
+            return ["":""]
+        case .GroupList:
+            return ["group": "体育"]
         }
     }
     
