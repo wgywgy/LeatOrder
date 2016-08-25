@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JDropDownAlert.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,17 +52,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2084371A78D7B17B2AD36D648B5DE214</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3A1A2759647CC90FF22E5E15330A2185</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4150A56F4BBEB4311285AF8522517D3B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,6 +67,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9B64DB15D7573EBD752A6BCC165AE56D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C31A540DD6DB56404A28511F9FCEB0D2</key>
 		<dict>
 			<key>primary</key>
@@ -82,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>EA50E3E7218AFE380295C676D30A5E1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>ECD716CABE292DCDD9F5F17DC1F264FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA97DA9333C6DA2715051597E669C46B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

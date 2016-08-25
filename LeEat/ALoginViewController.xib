@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ALoginViewController" customModule="LeEat" customModuleProvider="target">
+            <connections>
+                <outlet property="passwdInput" destination="Mik-r6-4El" id="Bnx-FW-RfE"/>
+                <outlet property="userIDInput" destination="8sY-WA-suE" id="UHm-JR-xpB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sY-WA-suE" customClass="AnimatedTextInput" customModule="AnimatedTextInput">
+                    <rect key="frame" x="0.0" y="64" width="320" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="v0y-Rw-yQM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-r6-4El" customClass="AnimatedTextInput" customModule="AnimatedTextInput">
+                    <rect key="frame" x="0.0" y="128" width="320" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="EMb-wA-drd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8sY-WA-suE" secondAttribute="trailing" id="1QV-JN-vru"/>
+                <constraint firstItem="8sY-WA-suE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="HKR-d9-Cgw"/>
+                <constraint firstItem="Mik-r6-4El" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="128" id="Rxc-7s-wBn"/>
+                <constraint firstAttribute="trailing" secondItem="Mik-r6-4El" secondAttribute="trailing" id="kXz-yp-Fpt"/>
+                <constraint firstItem="Mik-r6-4El" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lsX-8F-R3L"/>
+                <constraint firstItem="8sY-WA-suE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uNx-PF-9LU"/>
+            </constraints>
+            <point key="canvasLocation" x="264" y="245"/>
+        </view>
+    </objects>
+</document>

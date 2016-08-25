@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-LeEat/Alamofire.framework"
   install_framework "Pods-LeEat/AnimatedTextInput.framework"
+  install_framework "Pods-LeEat/JDropDownAlert.framework"
   install_framework "Pods-LeEat/Moya.framework"
   install_framework "Pods-LeEat/ObjectMapper.framework"
   install_framework "Pods-LeEat/Result.framework"
@@ -94,6 +95,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-LeEat/Alamofire.framework"
   install_framework "Pods-LeEat/AnimatedTextInput.framework"
+  install_framework "Pods-LeEat/JDropDownAlert.framework"
   install_framework "Pods-LeEat/Moya.framework"
   install_framework "Pods-LeEat/ObjectMapper.framework"
   install_framework "Pods-LeEat/Result.framework"

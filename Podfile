@@ -7,6 +7,7 @@ pod 'SnapKit'
 pod 'Moya'
 pod 'ObjectMapper'
 pod 'AnimatedTextInput'
+pod 'JDropDownAlert'
 end
 
 target 'LeEatTests' do

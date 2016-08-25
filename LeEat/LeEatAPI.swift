@@ -28,7 +28,7 @@ let LeEatProvider =
     MoyaProvider<LeEat>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
 
 public enum LeEat {
-    case Login(Int, Int)
+    case Login(Int, String)
     case CanBook
     case Book
 }
@@ -55,7 +55,7 @@ extension LeEat: TargetType {
     
     public var parameters: [String: AnyObject]? {
         switch self {
-        case Login(let passwd, let userId):
+        case Login(let userId, let passwd):
             return ["userId": userId, "password": passwd]
         case CanBook:
             return ["":""]
