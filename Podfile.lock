@@ -8,6 +8,7 @@ PODS:
     - Alamofire (~> 3.0)
     - Result (~> 2.0)
   - ObjectMapper (1.4.0)
+  - RAMPaperSwitch (1.0.4)
   - Result (2.1.3)
   - SnapKit (0.22.0)
   - SwiftyUserDefaults (2.2.1)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - JDropDownAlert
   - Moya
   - ObjectMapper
+  - RAMPaperSwitch
   - SnapKit
   - SwiftyUserDefaults
 
@@ -26,6 +28,7 @@ SPEC CHECKSUMS:
   JDropDownAlert: f8705ce3fe63ab6ea997e2ef6fd8b1f98ff22215
   Moya: f004b82418fb8165ee1fc9f86190db4b3611fda9
   ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
+  RAMPaperSwitch: 8fc0d32bcd0f168eadb2855528fd148afa29b37e
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
   SwiftyUserDefaults: 7abdba50a50ea0c18ee8903af3c88e4c1cb8448d

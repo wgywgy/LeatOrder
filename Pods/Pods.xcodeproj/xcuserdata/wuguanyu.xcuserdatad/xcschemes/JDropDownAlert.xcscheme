@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '111BB8FBBC2D4FB01B6D278D'
+               BlueprintIdentifier = 'CCEF30D059E01556D49764D8'
                BlueprintName = 'JDropDownAlert'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JDropDownAlert.framework'>

@@ -22,7 +22,7 @@ class LoginResponse: Mappable {
     
     // Mappable
     func mapping(map: Map) {
-        aUser  <- map["userBean"]
+        aUser  <- map["userbean"]
         beginTime  <- map["beginTime"]
         endTime     <- map["endTime"]
         success    <- map["success"]

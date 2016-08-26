@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A36EEF21D705A3B00BB56D2 /* NotifyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36EEF11D705A3B00BB56D2 /* NotifyHelper.swift */; };
+		3A5E41871D7016E3008405C1 /* GroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E41861D7016E3008405C1 /* GroupList.swift */; };
+		3A5E41891D7023E8008405C1 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E41881D7023E8008405C1 /* BookResponse.swift */; };
 		3A6A577D1D6EBFD2003A430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A577C1D6EBFD2003A430A /* AppDelegate.swift */; };
 		3A6A57841D6EBFD2003A430A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A57831D6EBFD2003A430A /* Assets.xcassets */; };
 		3A6A57871D6EBFD2003A430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A57851D6EBFD2003A430A /* LaunchScreen.storyboard */; };
@@ -14,13 +17,16 @@
 		3A6A579D1D6EBFD2003A430A /* LeEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A579C1D6EBFD2003A430A /* LeEatUITests.swift */; };
 		3A84B35B1D6ECBE30018496E /* LeEatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84B35A1D6ECBE30018496E /* LeEatAPI.swift */; };
 		3A84B35D1D6EDFD80018496E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84B35C1D6EDFD80018496E /* User.swift */; };
+		3AB1EE2F1D6FE63A001FF4A6 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB1EE2E1D6FE63A001FF4A6 /* Store.swift */; };
+		3AB1EE321D6FEA00001FF4A6 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB1EE311D6FEA00001FF4A6 /* UserDAO.swift */; };
+		3AB1EE351D6FF0EF001FF4A6 /* CanBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB1EE341D6FF0EF001FF4A6 /* CanBookResponse.swift */; };
+		3AB1EE371D6FF472001FF4A6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB1EE361D6FF472001FF4A6 /* GradientView.swift */; };
 		3AC0107E1D6EEEC100365DB6 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0107D1D6EEEC100365DB6 /* OrderDetailViewController.swift */; };
 		3AC010831D6EF7C600365DB6 /* ALoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC010811D6EF7C600365DB6 /* ALoginViewController.swift */; };
 		3AC010841D6EF7C600365DB6 /* ALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC010821D6EF7C600365DB6 /* ALoginViewController.xib */; };
 		3AC010861D6EFA5000365DB6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC010851D6EFA5000365DB6 /* BaseViewController.swift */; };
 		3AC010891D6F104B00365DB6 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC010871D6F104B00365DB6 /* GroupListViewController.swift */; };
 		3AC0108A1D6F104B00365DB6 /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC010881D6F104B00365DB6 /* GroupListViewController.xib */; };
-		3AC0108C1D6F120A00365DB6 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0108B1D6F120A00365DB6 /* CustomSwitch.swift */; };
 		3AC0108F1D6F129A00365DB6 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0108E1D6F129A00365DB6 /* Defines.swift */; };
 		9576963563C867643D710307 /* Pods_LeEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420CE8CA9BCD7A410F08448 /* Pods_LeEat.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A36EEF11D705A3B00BB56D2 /* NotifyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyHelper.swift; sourceTree = "<group>"; };
+		3A5E41861D7016E3008405C1 /* GroupList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
+		3A5E41881D7023E8008405C1 /* BookResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
 		3A6A57791D6EBFD2003A430A /* LeEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6A577C1D6EBFD2003A430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6A57831D6EBFD2003A430A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,13 +65,16 @@
 		3A6A579E1D6EBFD2003A430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A84B35A1D6ECBE30018496E /* LeEatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeEatAPI.swift; sourceTree = "<group>"; };
 		3A84B35C1D6EDFD80018496E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3AB1EE2E1D6FE63A001FF4A6 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		3AB1EE311D6FEA00001FF4A6 /* UserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		3AB1EE341D6FF0EF001FF4A6 /* CanBookResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanBookResponse.swift; sourceTree = "<group>"; };
+		3AB1EE361D6FF472001FF4A6 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3AC0107D1D6EEEC100365DB6 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		3AC010811D6EF7C600365DB6 /* ALoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALoginViewController.swift; sourceTree = "<group>"; };
 		3AC010821D6EF7C600365DB6 /* ALoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALoginViewController.xib; sourceTree = "<group>"; };
 		3AC010851D6EFA5000365DB6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3AC010871D6F104B00365DB6 /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		3AC010881D6F104B00365DB6 /* GroupListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
-		3AC0108B1D6F120A00365DB6 /* CustomSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
 		3AC0108E1D6F129A00365DB6 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		9A775EF1008BE826E3B95BFE /* Pods-LeEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeEat/Pods-LeEat.release.xcconfig"; sourceTree = "<group>"; };
 		B08F84725C8737C9E2C6FF2F /* Pods-LeEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeEat/Pods-LeEat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +115,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A36EEF01D705A2A00BB56D2 /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				3A36EEF11D705A3B00BB56D2 /* NotifyHelper.swift */,
+			);
+			name = Notify;
+			sourceTree = "<group>";
+		};
 		3A6A57701D6EBFD2003A430A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +148,9 @@
 		3A6A577B1D6EBFD2003A430A /* LeEat */ = {
 			isa = PBXGroup;
 			children = (
+				3A36EEF01D705A2A00BB56D2 /* Notify */,
+				3AB1EE301D6FE9F3001FF4A6 /* DAO */,
+				3AB1EE2D1D6FE60E001FF4A6 /* Store */,
 				3AC0108D1D6F128E00365DB6 /* Constrant */,
 				3A84B3591D6EC87F0018496E /* VC */,
 				3A84B3581D6EC8770018496E /* Model */,
@@ -162,6 +185,7 @@
 		3A84B3561D6EC8620018496E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3AB1EE331D6FF0D2001FF4A6 /* Response */,
 				3A84B35A1D6ECBE30018496E /* LeEatAPI.swift */,
 			);
 			name = API;
@@ -170,7 +194,7 @@
 		3A84B3571D6EC8690018496E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3AC0108B1D6F120A00365DB6 /* CustomSwitch.swift */,
+				3AB1EE361D6FF472001FF4A6 /* GradientView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -179,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				3A84B35C1D6EDFD80018496E /* User.swift */,
+				3A5E41861D7016E3008405C1 /* GroupList.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -194,6 +219,31 @@
 				3AC010881D6F104B00365DB6 /* GroupListViewController.xib */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		3AB1EE2D1D6FE60E001FF4A6 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				3AB1EE2E1D6FE63A001FF4A6 /* Store.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		3AB1EE301D6FE9F3001FF4A6 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				3AB1EE311D6FEA00001FF4A6 /* UserDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		3AB1EE331D6FF0D2001FF4A6 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3AB1EE341D6FF0EF001FF4A6 /* CanBookResponse.swift */,
+				3A5E41881D7023E8008405C1 /* BookResponse.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 		3AC0108D1D6F128E00365DB6 /* Constrant */ = {
@@ -398,13 +448,19 @@
 			files = (
 				3A84B35D1D6EDFD80018496E /* User.swift in Sources */,
 				3AC010891D6F104B00365DB6 /* GroupListViewController.swift in Sources */,
-				3AC0108C1D6F120A00365DB6 /* CustomSwitch.swift in Sources */,
 				3A84B35B1D6ECBE30018496E /* LeEatAPI.swift in Sources */,
+				3AB1EE351D6FF0EF001FF4A6 /* CanBookResponse.swift in Sources */,
 				3AC0107E1D6EEEC100365DB6 /* OrderDetailViewController.swift in Sources */,
+				3AB1EE2F1D6FE63A001FF4A6 /* Store.swift in Sources */,
 				3AC0108F1D6F129A00365DB6 /* Defines.swift in Sources */,
 				3AC010831D6EF7C600365DB6 /* ALoginViewController.swift in Sources */,
+				3A36EEF21D705A3B00BB56D2 /* NotifyHelper.swift in Sources */,
+				3AB1EE321D6FEA00001FF4A6 /* UserDAO.swift in Sources */,
+				3A5E41891D7023E8008405C1 /* BookResponse.swift in Sources */,
+				3AB1EE371D6FF472001FF4A6 /* GradientView.swift in Sources */,
 				3AC010861D6EFA5000365DB6 /* BaseViewController.swift in Sources */,
 				3A6A577D1D6EBFD2003A430A /* AppDelegate.swift in Sources */,
+				3A5E41871D7016E3008405C1 /* GroupList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

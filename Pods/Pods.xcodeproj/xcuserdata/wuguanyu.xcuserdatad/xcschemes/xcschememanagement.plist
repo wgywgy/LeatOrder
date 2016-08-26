@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RAMPaperSwitch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,6 +67,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4694C80C19015A87D105F14FBE2BC1A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>78C33D52F7E2D591E77871DBB03E8468</key>
 		<dict>
 			<key>primary</key>
@@ -72,27 +82,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8654818F7108BFA40737B78058C91F12</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9511B2B4F50746CE54035F5A8BA9B6F2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9B64DB15D7573EBD752A6BCC165AE56D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC00E77CFF19E6A42B7EE352DEF204FC</key>
+		<key>B8453EAAECCB64C400D253D576728216</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C31A540DD6DB56404A28511F9FCEB0D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9EEC2E5ABD27EFCB10F6B382D6A4ECC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -103,6 +108,11 @@
 			<true/>
 		</dict>
 		<key>ECD716CABE292DCDD9F5F17DC1F264FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC5ED21F4FF7134AA6674E1FCABE3BB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

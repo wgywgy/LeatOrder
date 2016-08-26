@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '43C2164BB099B40B11682D95'
-               BlueprintName = 'Alamofire'
+               BlueprintIdentifier = 'BFEBC9CAF292651C8E6FF5AB'
+               BlueprintName = 'RAMPaperSwitch'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Alamofire.framework'>
+               BuildableName = 'RAMPaperSwitch.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

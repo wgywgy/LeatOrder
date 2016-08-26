@@ -8,11 +8,9 @@
 
 import UIKit
 import Moya
+import SwiftyUserDefaults
 
 let baseAddress = "http://10.58.104.151:8080"
-class LeEatAPI: NSObject {
-
-}
 
 private func JSONResponseDataFormatter(data: NSData) -> NSData {
     do {
@@ -42,7 +40,7 @@ extension LeEat: TargetType {
         case .Login:
             return "/lebookdinner/login"
         case .CanBook:
-            return "/lebookdinner/canbok"
+            return "/lebookdinner/canbook"
         case .Book:
             return "/lebookdinner/book"
         case .Delete:
@@ -64,11 +62,17 @@ extension LeEat: TargetType {
         case Login(let userId, let passwd):
             return ["userId": userId, "password": passwd]
         case CanBook:
-            return ["":""]
+            let staffId = Defaults[.userStaffId]
+            return ["staffId": staffId]
         case Book:
-            return ["":""]
+            let staffId = Defaults[.userStaffId]
+            let staffGroup = Defaults[.userStaffGroup]
+            let staffName = Defaults[.userStaffName]
+            return ["count":"1", "staffId": staffId, "staffGroup": staffGroup, "staffName": staffName]
         case Delete:
-            return ["":""]
+            let staffId = Defaults[.userStaffId]
+            let orderDate = Defaults[.orderDate]
+            return ["staffId": staffId, "orderDate": orderDate]
         case .GroupList:
             return ["group": "体育"]
         }

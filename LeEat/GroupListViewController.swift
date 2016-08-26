@@ -7,29 +7,73 @@
 //
 
 import UIKit
+import JDropDownAlert
+import ObjectMapper
 
-class GroupListViewController: UIViewController {
+class GroupListViewController: BaseViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    var groupList = [GroupList]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.title = "乐饭团"
+        tableView.dataSource = self
+        tableView.delegate = self
+        getData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    deinit {
+        print("deinit")
     }
-    */
 
+    func getData() {
+        LeEatProvider.request(.GroupList) { (result) in
+            switch result {
+                
+            case let .Success(response):
+                let json = String(data: response.data, encoding: NSUTF8StringEncoding)
+                let response = Mapper<GroupListResponse>().map(json)
+                
+                if let groupList = response?.groupList {
+                    self.groupList = groupList
+                    self.tableView.reloadData()
+                }
+                
+            case let .Failure(error):
+                print("err: \(error)")
+                let alert = JDropDownAlert()
+                alert.alertWith("登录失败")
+            }
+        }
+
+        
+        self.tableView.reloadData()
+    }
+}
+
+extension GroupListViewController: UITableViewDelegate {
+    
+}
+
+extension GroupListViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let aCell = tableView.dequeueReusableCellWithIdentifier("aCell") ?? UITableViewCell(style: .Default, reuseIdentifier: "aCell")
+        let aData = groupList[indexPath.row]
+        
+        if let id = aData.staffId, staffName = aData.staffName {
+            aCell.textLabel?.text = staffName + " " + id
+        }
+        aCell.detailTextLabel?.text  = aData.staffGroup
+        return aCell
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return groupList.count
+    }
 }

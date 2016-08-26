@@ -9,6 +9,7 @@ pod 'ObjectMapper'
 pod 'AnimatedTextInput'
 pod 'JDropDownAlert'
 pod 'SwiftyUserDefaults'
+pod 'RAMPaperSwitch'
 end
 
 target 'LeEatTests' do
