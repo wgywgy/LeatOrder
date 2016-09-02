@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeEat/OrderDetailViewController.swift"
-            timestampString = "493902883.207546"
+            timestampString = "494164614.716566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "switchOne()"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeEat/OrderDetailViewController.swift"
-            timestampString = "493902883.207546"
+            timestampString = "494164614.716566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "switchOne()"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeEat/OrderDetailViewController.swift"
-            timestampString = "493902883.207546"
+            timestampString = "494164614.716566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "switchOne()"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeEat/OrderDetailViewController.swift"
-            timestampString = "493902883.207546"
+            timestampString = "494164614.716566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "switchOne()"
             landmarkType = "5">
          </BreakpointContent>
@@ -129,6 +129,16 @@
             endingLineNumber = "46"
             landmarkName = "localNotification()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

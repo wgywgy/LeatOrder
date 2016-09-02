@@ -11,9 +11,13 @@ import ObjectMapper
 import JDropDownAlert
 import SwiftyUserDefaults
 import RAMPaperSwitch
+import Firebase
+import GoogleMobileAds
 
 class OrderDetailViewController: BaseViewController {
 
+    let adId = "ca-app-pub-6052474397535297/3610219767"
+    
     let lookUpGroupBtn: UIButton = {
         let aBtn = UIButton(type: .Custom)
         aBtn.setTitle("查看本组订餐成员", forState: .Normal)
@@ -32,13 +36,15 @@ class OrderDetailViewController: BaseViewController {
     
     let rssLabel: UILabel = {
         let aLabel = UILabel()
-        aLabel.text = "是否工作日推送订餐消息"
+        aLabel.text = "是否每日推送订餐消息"
         aLabel.textColor = UIColor(hex: 0x8EC63F)
         return aLabel
     }()
     
     let aBgView = UIView()
     let aBgView2 = UIView()
+    
+    let bannerView = GADBannerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,10 +60,23 @@ class OrderDetailViewController: BaseViewController {
         lookUpGroupBtn.layer.masksToBounds = true
         self.view.addSubview(lookUpGroupBtn)
         
-        aBgView.frame = CGRect(x: 0, y: 174, width: ScreenSize.width, height: 180)
+        let adBarHeight: CGFloat = 50
+        
+        bannerView.frame = CGRect(x: 0, y: ScreenSize.height - 50, width: ScreenSize.width, height: 50)
+        bannerView.adUnitID = "ca-app-pub-6052474397535297/1800140966"
+        bannerView.rootViewController = self
+        
+        self.view.addSubview(bannerView)
+        let request = GADRequest()
+//        request.testDevices = [ "800d154efacda4e250dfd181a8ec6e6f" ]
+        bannerView.loadRequest(request)
+        
+        let bgViewHeight = (ScreenSize.height - adBarHeight - 174) / 2
+        
+        aBgView.frame = CGRect(x: 0, y: 174, width: ScreenSize.width, height: bgViewHeight)
         self.view.addSubview(aBgView)
         
-        aBgView2.frame = CGRect(x: 0, y: 174 + 180, width: ScreenSize.width, height: 180)
+        aBgView2.frame = CGRect(x: 0, y: aBgView.frame.size.height + aBgView.frame.origin.y, width: ScreenSize.width, height: bgViewHeight)
         self.view.addSubview(aBgView2)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "退出登录", style: UIBarButtonItemStyle.Done, target: self, action: #selector(touchLogoutBtn(_:)))
@@ -97,7 +116,7 @@ class OrderDetailViewController: BaseViewController {
         
         rssLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
         aBgView2.addSubview(rssLabel)
-        rssLabel.center = CGPoint(x: 140, y: aBgView2.frame.size.height / 2)
+        rssLabel.center = CGPoint(x: 154, y: aBgView2.frame.size.height / 2)
         
         paperSwitch2 = RAMPaperSwitch(view: aBgView2, color: UIColor(hex: 0x8EC63F))
         paperSwitch2?.center = CGPoint(x: aBgView2.frame.size.width - 60, y: aBgView2.frame.size.height / 2)

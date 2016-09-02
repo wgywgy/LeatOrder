@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyUserDefaults
+import Firebase
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //注册通知：
         let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        
+        UMAnalyticsConfig.sharedInstance().appKey = "57c3d78ee0f55a29f8000c2a"
+        MobClick.startWithConfigure(UMAnalyticsConfig.sharedInstance())
+        
+//        FIRApp.configure()
+        // Initialize Google Mobile Ads SDK
+        GADMobileAds.configureWithApplicationID("ca-app-pub-6052474397535297~9323407766")
 
         return true
     }

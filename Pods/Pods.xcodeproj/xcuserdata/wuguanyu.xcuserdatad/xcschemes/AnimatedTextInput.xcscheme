@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A5B172F389D89924A88F5D5D'
+               BlueprintIdentifier = 'A64E06D46819F56C8D9F2B3D'
                BlueprintName = 'AnimatedTextInput'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'AnimatedTextInput.framework'>

@@ -10,6 +10,10 @@ pod 'AnimatedTextInput'
 pod 'JDropDownAlert'
 pod 'SwiftyUserDefaults'
 pod 'RAMPaperSwitch'
+pod 'UMengAnalytics'
+pod 'Firebase/Core'
+pod 'Firebase/AdMob'
+
 end
 
 target 'LeEatTests' do

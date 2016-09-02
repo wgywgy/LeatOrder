@@ -70,6 +70,62 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2016 Google</string>
+			<key>Title</key>
+			<string>Firebase</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 Google</string>
+			<key>Title</key>
+			<string>FirebaseAnalytics</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 Google</string>
+			<key>Title</key>
+			<string>FirebaseInstanceID</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2011 Google Inc. All Rights Reserved.</string>
+			<key>Title</key>
+			<string>Google-Mobile-Ads-SDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2015 Google Inc.</string>
+			<key>Title</key>
+			<string>GoogleInterchangeUtilities</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2015 Google Inc.</string>
+			<key>Title</key>
+			<string>GoogleSymbolUtilities</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2015 Google Inc.</string>
+			<key>Title</key>
+			<string>GoogleUtilities</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (c) 2016 Steve Jo &lt;trilliwon.io@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -251,6 +307,15 @@ SOFTWARE.
 </string>
 			<key>Title</key>
 			<string>SwiftyUserDefaults</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2011 - 2015 UMeng.com. All rights reserved.
+</string>
+			<key>Title</key>
+			<string>UMengAnalytics</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

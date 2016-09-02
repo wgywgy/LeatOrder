@@ -38,11 +38,12 @@ class ALoginViewController: BaseViewController {
     }
     
     func touchLoginBtn(sender: AnyObject) {
-        let aVc = OrderDetailViewController()
-        self.navigationController?.pushViewController(aVc, animated: true)
-        return
+//        let aVc = OrderDetailViewController()
+//        self.navigationController?.pushViewController(aVc, animated: true)
+//        return
         
         print("userId: \(userIDInput.text)")
+        
         print("userwd: \(passwdInput.text)")
         
         guard let txt = userIDInput.text, userId = Int(txt) else {

@@ -43,7 +43,7 @@ class NotifyHelper: NSObject {
     }
     
     private func localNotification() -> UILocalNotification {
-        let localNotification:UILocalNotification = UILocalNotification()
+        let localNotification = UILocalNotification()
         localNotification.fireDate = alarmDate()
         
         localNotification.repeatInterval = NSCalendarUnit.Day
