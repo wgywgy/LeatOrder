@@ -17,13 +17,13 @@ class UserDAO: NSObject {
         }
         return false
     }
-    
+
     class func logout() {
         Defaults[.userStaffId] = ""
         Defaults[.userStaffName] = ""
         Defaults[.userStaffGroup] = ""
         Defaults[.userStaffRole] =  ""
+        Defaults[.userGroupId] = ""
     }
-    
-}
 
+}

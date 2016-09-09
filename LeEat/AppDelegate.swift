@@ -19,25 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = UIColor.whiteColor()
-        
+
         window?.rootViewController = UINavigationController(rootViewController: ALoginViewController(nibName: "ALoginViewController", bundle: nil))
-        
+
         window?.makeKeyAndVisible()
 
-        //注册通知：
-        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge], categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        
         UMAnalyticsConfig.sharedInstance().appKey = "57c3d78ee0f55a29f8000c2a"
         MobClick.startWithConfigure(UMAnalyticsConfig.sharedInstance())
-        
+
 //        FIRApp.configure()
         // Initialize Google Mobile Ads SDK
         GADMobileAds.configureWithApplicationID("ca-app-pub-6052474397535297~9323407766")
 
         return true
     }
-    
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -63,4 +59,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

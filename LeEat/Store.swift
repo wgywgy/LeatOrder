@@ -14,6 +14,7 @@ extension DefaultsKeys {
     static let userStaffRole = DefaultsKey<String>("userStaffRole")
     static let userStaffGroup = DefaultsKey<String>("userStaffGroup")
     static let userStaffName = DefaultsKey<String>("userStaffName")
+    static let userGroupId = DefaultsKey<String>("userGroupId")
     static let orderDate = DefaultsKey<String>("orderDate")
     static let isTurnOnNotify = DefaultsKey<Bool>("isTurnOnNotify")
 }

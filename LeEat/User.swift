@@ -11,15 +11,14 @@ import ObjectMapper
 
 class LoginResponse: Mappable {
     var aUser: userBean?
-    
+
     var beginTime: String?
     var endTime: String?
-    var success: Bool?
-    
+    var success: Bool = false
+
     required init?(_ map: Map) {
-        
     }
-    
+
     // Mappable
     func mapping(map: Map) {
         aUser  <- map["userbean"]
@@ -34,15 +33,17 @@ class userBean: Mappable {
     var staffGroup: String?
     var staffName: String?
     var staffId: String?
-    
+    var groupId: String?
+
     required init?(_ map: Map) {
     }
-    
+
     // Mappable
     func mapping(map: Map) {
         staffRole  <- map["staffRole"]
-        staffGroup     <- map["staffGroup"]
-        staffName    <- map["staffName"]
+        staffGroup <- map["staffGroup"]
+        staffName  <- map["staffName"]
         staffId    <- map["staffId"]
+        groupId    <- map["groupId"]
     }
 }

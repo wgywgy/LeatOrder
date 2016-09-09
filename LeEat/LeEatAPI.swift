@@ -46,17 +46,17 @@ extension LeEat: TargetType {
         case .Delete:
             return "/lebookdinner/delete"
         case .GroupList:
-            return "/lebookdinner/groupList"
+            return "/lebookdinner/iosgrouplist"
         }
     }
-    
+
     public var method: Moya.Method {
         switch self {
         case Login, CanBook, Book, .Delete, GroupList:
             return .GET
         }
     }
-    
+
     public var parameters: [String: AnyObject]? {
         switch self {
         case Login(let userId, let passwd):
@@ -74,14 +74,15 @@ extension LeEat: TargetType {
             let orderDate = Defaults[.orderDate]
             return ["staffId": staffId, "orderDate": orderDate]
         case .GroupList:
-            return ["group": "体育"]
+            let groupId = Defaults[.userGroupId]
+            return ["group": groupId]
         }
     }
-    
+
     public var multipartBody: [Moya.MultipartFormData]? {
         return nil
     }
-    
+
     public var sampleData: NSData {
         return "sampleData".dataUsingEncoding(NSUTF8StringEncoding)!
     }

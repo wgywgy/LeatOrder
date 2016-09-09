@@ -14,7 +14,7 @@ class GroupListViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var groupList = [GroupList]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +23,7 @@ class GroupListViewController: BaseViewController {
         tableView.delegate = self
         getData()
     }
-    
+
     deinit {
         print("deinit")
     }
@@ -31,16 +31,16 @@ class GroupListViewController: BaseViewController {
     func getData() {
         LeEatProvider.request(.GroupList) { (result) in
             switch result {
-                
+
             case let .Success(response):
                 let json = String(data: response.data, encoding: NSUTF8StringEncoding)
                 let response = Mapper<GroupListResponse>().map(json)
-                
+
                 if let groupList = response?.groupList {
                     self.groupList = groupList
                     self.tableView.reloadData()
                 }
-                
+
             case let .Failure(error):
                 print("err: \(error)")
                 let alert = JDropDownAlert()
@@ -48,31 +48,34 @@ class GroupListViewController: BaseViewController {
             }
         }
 
-        
+
         self.tableView.reloadData()
     }
 }
 
 extension GroupListViewController: UITableViewDelegate {
-    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
 }
 
 extension GroupListViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let aCell = tableView.dequeueReusableCellWithIdentifier("aCell") ?? UITableViewCell(style: .Default, reuseIdentifier: "aCell")
+        let aCell = tableView.dequeueReusableCellWithIdentifier("aCell") ?? UITableViewCell(style: .Subtitle, reuseIdentifier: "aCell")
         let aData = groupList[indexPath.row]
-        
+
         if let id = aData.staffId, staffName = aData.staffName {
-            aCell.textLabel?.text = staffName + " " + id
+            aCell.textLabel?.text = "姓名： " + staffName + " ID: " + id
         }
+
         aCell.detailTextLabel?.text  = aData.staffGroup
         return aCell
     }
-    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groupList.count
     }
